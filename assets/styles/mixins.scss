@@ -1,0 +1,10 @@
+@mixin max($size) {
+  $size: $size * 1px;
+  @media (max-width: $size) {
+    @content;
+  }
+};
+
+@mixin test {
+  background-color: bisque;
+};

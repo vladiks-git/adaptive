@@ -1,0 +1,33 @@
+@import './fonts.scss';
+@import './mixins';
+@import './functions';
+@import './header';
+@import './reasons';
+@import './bullets';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: vw(30);
+}
+
+
+.container {
+  font-family: Golos;
+  border: 1px solid #D3D3D3;
+}
+
+@include max(768){
+  body{
+    padding: vw(20, 768);
+  }
+}
+
+@include max(375){
+  body{
+    padding: vw(20, 375);
+  }
+}
