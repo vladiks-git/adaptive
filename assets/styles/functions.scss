@@ -1,4 +1,4 @@
-@function vw($size, $base-vw: 1360){
+@function vw($size, $base-vw: 1920){
   $size: $size * 1px;
   $base-vw: $base-vw * 1px;
   @return ($size * 100vw) / $base-vw;
